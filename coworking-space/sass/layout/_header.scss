@@ -1,0 +1,55 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+  padding-bottom: 50px;
+  a {
+    text-decoration: none;
+    color: #313131;
+    transition: all 0.5s ease;
+    &:hover {
+      color: rgb(137 137 101);
+    }
+  }
+  nav.nav-principal {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+      li {
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: rgb(137 137 101);
+    }
+  }
+  aside {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    figure {
+      padding: 0 40px;
+    }
+    .btn {
+      background-color: rgb(137 137 101);
+      color: white;
+      padding: 15px 30px;
+      &:hover {
+        background-color: rgba(137, 137, 101, 0.5);
+        color: #313131;
+      }
+    }
+    .signin {
+      color: rgb(137 137 101);
+      text-decoration: underline;
+      background-color: white;
+      &:hover {
+        background-color: white;
+        color: #313131;
+        text-decoration: none;
+      }
+    }
+  }
+}

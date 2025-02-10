@@ -1,0 +1,19 @@
+@use "./abstracts/abstracts";
+@use "./vendors/vendors";
+@use "./base/base";
+@use "./components/components";
+@use "./layout/layout";
+@use "./pages/pages";
+@use "./themes/themes";
+@use "settings";
+
+html {
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}

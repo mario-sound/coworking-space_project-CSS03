@@ -1,0 +1,83 @@
+.hero {
+  display: grid;
+  grid-template-columns: 50% auto;
+  align-items: center;
+  background-image: url("img/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  padding: 50px;
+  .hero-content {
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: "Playfair Display";
+      padding: 0;
+      margin: 0;
+      font-size: 48px;
+      line-height: 55px;
+      max-width: 500px;
+      position: relative;
+      &::before {
+        content: "";
+        height: 8px;
+        width: 72px;
+        position: absolute;
+        background-color: rgb(137 137 101);
+        right: 0px;
+        top: 30px;
+      }
+    }
+    p {
+      padding-top: 40px;
+      color: rgb(137 137 101);
+      font-weight: 300;
+    }
+  }
+  .benefits {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 60%;
+      gap: 10px;
+      li {
+        font-size: 0.8rem;
+        font-weight: 300;
+        background-image: url("../../img/check.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px;
+        padding-left: 25px;
+      }
+    }
+  }
+}
+section.description {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  article {
+    padding: 0 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    img {
+      width: 70px;
+    }
+    p {
+      color: #313131;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    span {
+      color: rgb(137 137 101);
+    }
+  }
+}
